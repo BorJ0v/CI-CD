@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: api
-        image: bzerker/docask-api:latest # Change this!
+        image: bzrkr/docask-api:latest # Change this!
         ports:
         - containerPort: 8000

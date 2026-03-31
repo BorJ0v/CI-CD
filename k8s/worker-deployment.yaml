@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: worker
-        image: bzerker/docask-worker:latest 
+        image: bzrkr/docask-worker:latest 
