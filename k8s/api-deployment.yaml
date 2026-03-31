@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docask-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: docask-api
+  template:
+    metadata:
+      labels:
+        app: docask-api
+    spec:
+      containers:
+      - name: api
+        image: bzerker/docask-api:latest # Change this!
+        ports:
+        - containerPort: 8000

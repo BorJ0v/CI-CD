@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docask-worker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: docask-worker
+  template:
+    metadata:
+      labels:
+        app: docask-worker
+    spec:
+      containers:
+      - name: worker
+        image: bzerker/docask-worker:latest 
