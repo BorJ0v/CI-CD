@@ -9,4 +9,4 @@ spec:
   ports:
     - port: 8000
       targetPort: 8000
-      nodePort: 31021 # This is the port we opened in your EC2 security group
+      nodePort: 31080 # This is the port we opened in your EC2 security group
